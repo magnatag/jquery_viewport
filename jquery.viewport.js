@@ -73,7 +73,7 @@
         return true;
     };
 
-    $.extend($.expr[':'], {
+    $.extend($.expr.pseudos, {
         "below-the-fold": function(a, i, m) {
             return $.belowthefold(a, {threshold : 0});
         },
